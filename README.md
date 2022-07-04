@@ -2,9 +2,9 @@
 
 Python port of iNEXT.ind function from iNEXT 
 
-Code: https://github.com/JohnsonHsieh/iNEXT/blob/master/R/iNEXT.r
+**Code**: https://github.com/JohnsonHsieh/iNEXT/blob/master/R/iNEXT.r
 
-Paper: https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12613
+**Paper**: https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.12613
 
 Descriptions: where count is a list of ints == counts/sample (counts is typically equivilant to "reads")
 and endpoint is an integer meaning total number of counts or reads to extrapolate to. 
@@ -15,16 +15,15 @@ Output is a dict of named lists, each contains n == # species objects for:
        'species_upper_conf', 'coverage', 'coverage_lower_conf',
        'coverage_upper_conf']
 
-Usage:
+**Usage**:
 
+```
 import pynext
-
 import pandas as pd #optional 
 
 count = [1, 5, 10, 17... ] 
-
 endpoint = 500000
 
 out = pynext(count, endpoint)
-
 df  = pd.DataFrame
+```
